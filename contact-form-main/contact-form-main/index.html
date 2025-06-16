@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -26,31 +25,44 @@
             <label for="first-name">First Name</label>
             <br>
             <input type="text" id="first-name" name="first-name" required>
+            <span class="error-message" id="first-name-error"></span>
           </div>
 
           <div class="last-name">
             <label for="last-name">Last Name</label>
             <br>
             <input type="text" id="last-name" name="last-name" required>
+            <span class="error-message" id="last-name-error"></span>
           </div>
 
         </div>
 
         <div class="email">
-          <label for="email">Email Address</label>
+          <label for="email">
+            Email Address
+            <span class="required">*</span>
+          </label>
           <br>
-          <input type="email" id="email" name="email" required>
+          <div class="email-input-container">
+            <input type="email" id="email" name="email" required>
+          </div>
+          <span class="error-message" id="email-error"></span>
         </div>
 
         <div class="query-type">
-          <label for="query-type">Query Type</label>
+          <label for="query-type">
+            Query Type
+            <span class="required">*</span>
+          </label>
           <br>
 
           <div class="query-options">
 
             <div class="general-enquiry">
               <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" checked>
-              <label for="general-enquiry">General Enquiry</label>
+              <label for="general-enquiry">
+                General Enquiry
+              </label>
             </div>
 
             <div class="support-request">
@@ -62,14 +74,21 @@
         </div>
 
         <div class="message">
-          <label for="message">Message</label>
+          <label for="message">
+            Message
+            <span class="required">*</span>
+          </label>
           <br>
           <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error-message" id="message-error"></span>
         </div>
 
         <div class="consent">
           <input type="checkbox" id="consent" name="consent" required>
-          <label for="consent">I consent to being contacted by the team</label>
+          <label for="consent">I consent to being contacted by the team
+            <span class="required">*</span>
+          </label>
+          <span class="error-message" id="consent-error"></span>
         </div>
 
         <div class="submit">
@@ -81,36 +100,7 @@
     </div>
 
   </div>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
-<!-- 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
-
-<!-- First Name
-  This field is required
-  
-  Last Name
-  This field is required
-  
-  Email Address
-  Please enter a valid email address
-  This field is required
-  
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-  
-  Message
-  This field is required
-  
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-  
-  Submit -->
