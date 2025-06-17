@@ -22,14 +22,20 @@
         <div class="name">
 
           <div class="first-name">
-            <label for="first-name">First Name</label>
+            <label for="first-name">
+              First Name
+              <span class="required">*</span>
+            </label>
             <br>
             <input type="text" id="first-name" name="first-name" required>
             <span class="error-message" id="first-name-error"></span>
           </div>
 
           <div class="last-name">
-            <label for="last-name">Last Name</label>
+            <label for="last-name">
+              Last Name
+              <span class="required">*</span>
+            </label>
             <br>
             <input type="text" id="last-name" name="last-name" required>
             <span class="error-message" id="last-name-error"></span>
@@ -59,7 +65,7 @@
           <div class="query-options">
 
             <div class="general-enquiry">
-              <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" checked>
+              <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry">
               <label for="general-enquiry">
                 General Enquiry
               </label>
@@ -99,6 +105,11 @@
 
     </div>
 
+  </div>
+  <div class="toast">
+    Message sent!
+    <br>
+    Thanks for completing the form. We will be in touch soon.
   </div>
   <script src="./script.js"></script>
 </body>

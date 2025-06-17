@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!hasError) {
-            alert("Form submitted successfully!");
+            formSubmitted();
         }
     });
     function showError(inputEl, message) {
@@ -64,3 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
         inputEl.classList.add("input-error");
     }
 });
+
+function formSubmitted() {
+    console.log(document.getElementsByClassName("toast")[0]);
+    document.getElementsByClassName("toast")[0].style.opacity = 1;
+    setTimeout(() => {
+        document.getElementsByClassName("toast")[0].style.opacity = 0;
+    },3000)
+}
